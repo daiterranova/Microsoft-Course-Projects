@@ -2,11 +2,31 @@ const plants = document.querySelectorAll(".plant");
 /* selecciono todos los elementos que tienen la clase planta y las guardo en una constante */
 const terrarium = document.getElementById("terrarium");
 const container = document.querySelector(".left");
+const button = document.querySelector(".clone-btn");
+const firstPlantLeft = document.getElementById("plant1");
 
 for (let i = 0; i < plants.length; i++) {
   dragElement(plants[i]);
 }
 /* itero sobre la constante asignando a cada planta el llamado de la funcion */
+
+button.addEventListener("click", cloningPlant);
+
+function elementFromHtml(html) {
+  const template = document.createElement("template");
+  template.innerHTML = html.trim();
+  return template.content.firstElementChild;
+}
+
+function cloningPlant() {
+  /* una nueva planta 
+   crear una img 
+  ponerla en section left o ponerla dentro del div de la planta original */
+  const clonedPlant = elementFromHtml(`
+  <img class='cloned-plant plant' src='../images/plant1.png' alt='newplant'>
+  `);
+  firstPlantLeft.appendChild(clonedPlant);
+}
 
 function dragElement(terrariumElement) {
   let pos1 = 0,
@@ -20,6 +40,7 @@ function dragElement(terrariumElement) {
     terrariumElement.classList.add("resize");
     terrariumElement.classList.remove("plant");
   }
+
   function pointerDrag(e) {
     e.preventDefault();
     pos3 = e.clientX;

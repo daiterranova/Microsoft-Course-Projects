@@ -11,3 +11,9 @@ quiero poder agarrar cada planta y posicionarla dentro del terrario
 - a otra posicion x/y dentro del terrario
 - cambiar la posicion anterior a la nueva posicion.
   (necesito saber de donde a donde va)
+
+\*\* Nuevas interacciones
+
+- agregar un boton que me duplique la planta.
+- boton "clonar"
+- decidir en que posicion la quiero

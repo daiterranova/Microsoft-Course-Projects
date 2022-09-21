@@ -17,3 +17,8 @@ quiero poder agarrar cada planta y posicionarla dentro del terrario
 - agregar un boton que me duplique la planta.
 - boton "clonar"
 - decidir en que posicion la quiero
+
+problemas a resolver
+
+- como hacer que la planta clonada tmb se pueda colocar dentro del terrario
+- si clono la planta antes de mover la original, esta ultima no se puede draggear.

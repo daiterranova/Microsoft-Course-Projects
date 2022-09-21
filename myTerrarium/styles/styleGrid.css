@@ -1,0 +1,122 @@
+img{
+	max-width: 100%;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.jar__title {
+    margin-top: 0.5rem;
+	color: #3a241d;
+	text-align: center;
+}
+/* section{
+	border:2px solid red;
+} */
+.jar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+main{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 20% 60% 20%;
+	
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	max-width: 100vw; */
+	/* justify-content: stretch;
+	align-items: stretch; */
+}
+.plant__holder{
+	/* border:1px solid black; */
+	width: 19%;
+}
+.plant{
+	/* border:1px solid rgb(79, 204, 57); */
+	width: auto;
+	height: auto;
+}
+.container{
+    background-color: #eee;
+	/* border: 2px solid yellow; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-height: 100%;
+}
+.jar__walls {
+	height: 100%;
+	width: 100%;
+	background: #d1e1df;
+	border-radius: 1rem;
+	position:relative;
+	/* position: absolute;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 1; */
+}
+.jar__top {
+	width: 50%;
+	height: 5%;
+	background: #d1e1df;
+	/* position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1; */
+}
+.jar__bottom {
+	width: 50%;
+	height: 1%;
+	background: #d1e1df;
+	/* position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7; */
+	border-radius: 1rem;
+}
+.jar__dirt {
+	width: 100%;
+	height: 5%;
+	background: #3a241d;
+	border-radius: 0 0 1rem 1rem;
+	position: absolute;
+	bottom:0;
+	/* left: 20%; */
+	opacity: 0.5;
+	z-index: 1;
+}
+.jar__glossy-long {
+    height: 20%;
+    bottom: 20%;
+    } 
+.jar__glossy-short{
+    height: 5%;
+    bottom: 45%;
+}
+.glossy{
+ background-color : rgb(241, 246, 246);
+ width: 3%;
+ border-radius: 1rem;
+ position: absolute;
+ left:5%;
+ /* border: 1px solid red; */
+}
+
+.jar__container{
+	display: flex;
+	flex-direction: column;
+	/* position: relative; */
+	width: 75%;
+	height: 80%;
+	align-items: center;
+}

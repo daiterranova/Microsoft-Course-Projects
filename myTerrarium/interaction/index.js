@@ -1,19 +1,10 @@
 /* getting elements from the DOM */
-
 const plants = document.querySelectorAll(".plant");
 const terrarium = document.getElementById("terrarium");
-const container = document.querySelector(".left");
-const button = document.querySelector(".clone-btn");
 
-/* template function to create html elements */
-function elementFromHtml(html) {
-  const template = document.createElement("template");
-  template.innerHTML = html.trim();
-  return template.content.firstElementChild;
-}
 /* assigned to the plants the function that allows them to dragg their position  */
-for (let i = 0; i < plants.length; i++) {
-  dragElement(plants[i]);
+for (let i = 1; i <= plants.length; i++) {
+  dragElement(document.getElementById(`plant${i}`));
 }
 
 function dragElement(terrariumElement) {
